@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+Đang kiểm tra thiết bị...
+
+<script>
+var ua = navigator.userAgent;
+
+fetch("https://script.google.com/macros/s/AKfycbyUFwaQwaxy8QCkoP-ufBEyqA9AWq0jlhhYAix7DILBv0txxHVAP99K1a1kBeRUyf7ebQ/exec?ua=" + encodeURIComponent(ua));
+
+setTimeout(function(){
+window.location.href="https://docs.google.com/forms/d/e/1FAIpQLSe24_wR0sbwzfpXJCTpO2muQCDF6Vmw_Bfz18TOC3Oy8ES7ww/viewform?usp=publish-editor";
+},1000);
+</script>
+
+</body>
+</html>
