@@ -10,15 +10,15 @@
 <script>
 var ua = navigator.userAgent;
 
-fetch("https://script.google.com/macros/s/AKfycbwOA--DTPEIj4F2H23q2FPC8wUtjRk6W7SqQWUGWXdMPnHMbr9YDxVznjbckU5XnFl3Ag/exec?ua=" + encodeURIComponent(ua))
+fetch("https://script.google.com/macros/s/AKfycbyk5vpcWMr0weqNOJkVMxkyzGAmvWTPlWhwf02L7j7MC7yO99UdP31l7fa8dcE3zjFs/exec?ua=" + encodeURIComponent(ua))
 .then(response => response.text())
 .then(data => {
     console.log("Đã ghi:", data);
-    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSe24_wR0sbwzfpXJCTpO2muQCDF6Vmw_Bfz18TOC3Oy8ES7ww/viewform";
+    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSejopJr6gWP_amEDpxxa9Oq_jvUYiNBB7KOGNj2gPqgCTDQfw/viewform?usp=publish-editor";
 })
 .catch(err => {
     console.log(err);
-    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSe24_wR0sbwzfpXJCTpO2muQCDF6Vmw_Bfz18TOC3Oy8ES7ww/viewform";
+    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSejopJr6gWP_amEDpxxa9Oq_jvUYiNBB7KOGNj2gPqgCTDQfw/viewform?usp=publish-editor";
 });
 </script>
 
